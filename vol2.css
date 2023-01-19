@@ -1,0 +1,59 @@
+
+.v2 /* about volet 2 all of it*/
+{
+  position:absolute;
+  top:74.rem;
+  left: 0;
+  width: 29%;
+  z-index:900;
+  height: 93em;
+  overflow:scroll;
+  background-color: #fff;
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.06);
+ }
+.vol2 /*a propos la boite de chaque groupe */
+{
+    background-color: #5C0632;
+    width: 90%;
+    text-align: center;
+    margin: 10px 10px;
+    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    border-radius: 20px;
+    border: 5px solid #5C0632;
+}
+.grpname
+{    
+    margin:10px 20px;
+    text-align: center;
+    background-color: #fff;
+    font-size:20px;
+    border-top-left-radius:25px ;
+    border-top-right-radius:25px ;
+    width:20rem;
+    height:4rem;
+    padding: 10px 15px 5px 15px ;
+}
+.equipe ul li {
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    gap: 15px;
+}
+/*utilisation de list-style-image our remplace le marqueur d'élément de liste par une image*/
+ .equipe ul  li img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 5px 0;
+}
+.team /*about the name of each team*/
+{
+    color: #fff;
+    font-size:20px;
+    font-weight: 150;
+}
+.GP
+{  
+    padding-bottom: 10px;
+}

@@ -1,0 +1,206 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <script src="script.js"></script>
+            <link rel="stylesheet" href="tryvolet4.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Tableau des joueurs</title>
+            
+        </head>
+        <body>
+        
+            <div id="tab">
+                <h1 class="headingc"> <span> Morocco national football team </span></h1>
+                <table id="table">
+                    <tr class="row3" >
+                       
+                        <th  class="th_tab" style="color:rgb(92, 6, 50); border-top-left-radius: 5rem; border-bottom-right-radius: 5rem; font-size: large;" >Player </th>
+                        <th class="th_tab"  style="color:#5C0632; border-top-left-radius: 5rem; border-bottom-right-radius: 5rem; font-size: large;">Main position</th>
+                        <th class="th_tab" style="color:#5C0632; border-top-left-radius: 5rem; border-bottom-right-radius: 5rem; font-size: large;">#</th>
+                        <th class="th_tab" style="color:#5C0632; border-top-left-radius: 5rem; border-bottom-right-radius: 5rem; font-size: large;">PALMARES</th>
+                        
+                            
+                    </tr>      
+                    <tr id="row1" class="ele">
+                         <th id="player1" class="th_tab" >Achraf Hakimi </th>
+                        <th id="position1" class="th_tab" >Défenseur</th>
+                        <th id="index1" class="th_tab" >2</th>
+                        <th id="palmares1" class="th_tab" >Champions league x2</th>
+                        <th class="th_tab1" ><input class="sup" type="button" onclick="Supprimer('1')" value="delete"></th>
+                        <th  id="edit1" class="th_tab" ><input class="mod" type="button" onclick="Modifier('1')" value="edit"></th>    
+                    </tr>
+                    <tr id="row2" class="ele">
+                        <th id="player2" class="th_tab" >Bono</th>
+                        <th id="position2" class="th_tab" >Gardien de but</th>
+                        <th id="index2" class="th_tab" ><div>1</div> </th>
+                        <th id="palmares2" class="th_tab" > Europa League x1</th>
+                       
+                         <th class="th_tab" ><input class="sup" type="button" onclick="Supprimer('2')" value="delete"></th>
+                        <th id="edit2"  class="th_tab"><input class="mod" type="button" onclick="Modifier('2')" value="edit"></th>     
+                    </tr>
+                    <tr id="row3" class="ele">
+                        
+                        <th id="player3" class="th_tab" >Ahmed Reda Tagnaouti </th>
+                        <th id="position3" class="th_tab" >Gardien de but</th>
+                        <th id="index3" class="th_tab" >22</th>
+                        <th id="palmares3" class="th_tab" >Africa nation league
+                            x1</th>
+                       
+                             <th class="th_tab" ><input class="sup" type="button" onclick="Supprimer('3')" value="delete"></th>
+                        <th id="edit3"  class="th_tab"><input class="mod" type="button" onclick="Modifier('3')" value="edit"></th>     
+                    </tr>
+                    <tr id="row4" class="ele">        
+                        <th id="player4" class="th_tab" >Munir </th>
+                        <th id="position4" class="th_tab" >Gardien de but</th>
+                        <th id="index4" class="th_tab" >12</th>
+                        <th id="palmares4" class="th_tab" >Saudi Pro League </th>
+                       
+                         <th class="th_tab" ><input class="sup" type="button" onclick="Supprimer('4')" value="delete"></th>
+                        <th id="edit4"  class="th_tab"><input class="mod" type="button" onclick="Modifier('4')" value="edit"></th>     
+                    </tr>
+                    <tr id="row5" class="ele">        
+                        <th id="player5" class="th_tab" >Nayef AGUERD </th>
+                        <th id="position5" class="th_tab" >Défenseur central</th>
+                        <th id="index5" class="th_tab" >5</th>
+                        <th id="palmares5" class="th_tab" >Africa nation league</th>
+                       
+                         <th class="th_tab" ><input class="sup" type="button" onclick="Supprimer('5')" value="delete"></th>
+                        <th id="edit5"  class="th_tab"><input class="mod" type="button" onclick="Modifier('5')" value="edit"></th>     
+                    </tr>
+                    <tr id="row6" class="ele">
+                        <th id="player6" class="th_tab" >Romain Saïss </th>
+                        <th id="position6" class="th_tab" >Défenseur central</th>
+                        <th id="index6" class="th_tab" >6</th>
+                        <th id="palmares6" class="th_tab" >Championship league
+                            x1</th>
+                       
+                             <th class="th_tab" ><input class="sup" type="button" onclick="Supprimer('6')" value="delete"></th>
+                        <th  id="edit6"  class="th_tab"><input class="mod" type="button" onclick="Modifier('6')" value="edit"></th>     
+                    </tr>
+                    <tr id="row7" class="ele">
+                    <th id="player7" class="th_tab" >Achraf Dari </th>
+                        <th  id="position7" class="th_tab" >Défenseur central</th>
+                        <th id="index7" class="th_tab" >20</th>
+                        <th id="palmares7" class="th_tab" >caf champions league x1</th>
+                       
+                         <th class="th_tab" ><input class="sup" type="button" onclick="Supprimer('7')" value="delete"></th>
+                        <th id="edit7"  class="th_tab"><input class="mod" type="button" onclick="Modifier('7')" value="edit"></th>     
+                    </tr>
+                    <tr id="row8" class="ele">
+                        
+                        <th id="player8" class="th_tab" >Jawad El Yamiq </th>
+                        <th id="position8" class="th_tab" >Défenseur central</th>
+                        <th id="index8" class="th_tab" >18</th>
+                        <th id="palmares8" class="th_tab" >Africa nation league x1</th>
+                       
+                         <th class="th_tab" ><input class="sup" type="button" onclick="Supprimer('8')" value="delete"></th>
+                        <th id="edit8"  class="th_tab"><input class="mod" type="button" onclick="Modifier('8')" value="edit"></th>     
+                    </tr>
+                    <tr id="row9" class="ele">
+                        <th id="player9" class="th_tab" >Badr Benoun </th>
+                        <th id="position9" class="th_tab" >Défenseur central</th>
+                        <th id="index9" class="th_tab" >24</th>
+                        <th id="palmares9" class="th_tab" >Africa super cup
+                            x3</th>
+                       
+                             <th class="th_tab" ><input class="sup" type="button" onclick="Supprimer('9')" value="delete"></th>
+                        <th id="edit9"  class="th_tab"><input class="mod" type="button" onclick="Modifier('9')" value="edit"></th>     
+                    </tr>
+                    <tr id="row10" class="ele">
+                        
+                        <th id="player10" class="th_tab" >Yahia Attiyat Allah </th>
+                        <th id="position10" class="th_tab" > Défenseur gauche</th>
+                        <th id="index10" class="th_tab" >25</th>
+                        <th id="palmares10" class="th_tab" >caf champions league
+                            x1</th>
+                       
+                             <th class="th_tab" ><input class="sup" type="button" onclick="Supprimer('10')" value="delete"></th>
+                        <th id="edit10"  class="th_tab"><input class="mod" type="button" onclick="Modifier('10')" value="edit"></th>     
+                    </tr>
+                    <tr id="row11" class="ele">
+                        
+                        <th id="player11" class="th_tab" >Noussair Mazraoui </th>
+                        <th id="position11" class="th_tab" > Défenseur droit</th>
+                        <th id="index11" class="th_tab" >3</th>
+                        <th id="palmares11" class="th_tab" >EREDIVISIE
+                            x2</th>
+                       
+                            <th class="th_tab" ><input class="sup" type="button" onclick="Supprimer('11')" value="delete"></th>
+                        <th id="edit11"  class="th_tab"><input class="mod" type="button" onclick="Modifier('11')" value="edit"></th>        
+                    </tr>
+                    <tr id="row12" class="ele">
+                        
+                        <th id="player12" class="th_tab" >Sofyan Amrabat </th>
+                        <th id="position12" class="th_tab" >  Milieu centre</th>
+                        <th id="index12" class="th_tab" >4</th>
+                        <th id="palmares12" class="th_tab" >Africa nation league
+                            x2</th>
+                       
+                             <th class="th_tab" ><input class="sup" type="button" onclick="Supprimer('12')" value="delete"></th>
+                        <th id="edit12"  class="th_tab"><input class="mod" type="button" onclick="Modifier('12')" value="edit"></th>     
+                    </tr>
+                    <tr id="row13" class="ele">
+                        <th id="player13" class="th_tab" >Yahya Jabrane </th>
+                        <th id="position13" class="th_tab" > Milieu centre</th>
+                        <th id="index13" class="th_tab" >26</th>
+                        <th id="palmares13" class="th_tab" >Africa nation league
+                            x2</th>
+                       
+                        <th class="th_tab" ><input class="sup" type="button" onclick="Supprimer('13')" value="delete"></th>
+                        <th  id="edit13" class="th_tab"> <input class="mod" type="button" onclick="Modifier('13')" value="edit"></th>     
+                    </tr>
+                    <tr id="row14" class="ele">
+                        
+                        <th id="player14" class="th_tab" >Azzedine Ounahi </th>
+                        <th id="position14" class="th_tab" >  Milieu droit</th>
+                        <th id="index14" class="th_tab" >8</th>
+                        <th id="palmares14" class="th_tab" >Africa nation league
+                            x2</th>
+                       
+                             <th class="th_tab" ><input class="sup" type="button" onclick="Supprimer('14')" value="delete"></th>
+                        <th id="edit14"  class="th_tab"><input class="mod" type="button" onclick="Modifier('14')" value="edit"></th>     
+                    </tr>
+                </table>
+                <br>
+                <div class="add">
+                    <button class="btn_ajt" onclick="Add()"> Add </button>
+                </div>
+         </div>
+         <!--\\\\\\\\\\\\\\\\\\\\\ FORMULAIRE\\\\\\\\\\\\\\\\\\\\\\\ -->
+        
+            <div class="hide" id="formulaire">
+               <H1 class="N_add">ADD A NEW PLAYER</H1>
+               <div  class="holders">
+                  <div>
+                    <input id = new_player class="txtarea" type="text" placeholder="Player name">
+                   </div> 
+                 <br>
+                  <div>
+                    <input id = new_position class="txtarea" type="text" placeholder="Main position">
+                   </div>
+                   <br>
+                   <div> 
+                     <input id = new_index class="txtarea" type="text" placeholder="#">
+                   </div>
+                   <br>
+                   <div>
+                     <input id = new_palmares class="txtarea" type="text" placeholder="PALMARES"></div>
+                   </div>
+                   <br>
+                   <div class="buttonsave">
+                     <input type="button" class="btnF" id="sub"  onclick="save()" value="Save">
+                   </div>
+                   <br>
+                   <div class="buttonCls"> 
+                     <input type="button" class="btnC" id="cls"  value="Close" >
+                   </div>
+               </div>
+           </div>
+           
+        
+                
+        </body>
+        </html>

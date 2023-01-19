@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="style1.css" rel="stylesheet">
+    <link href="generale style.css" rel="stylesheet">
+    <link rel="stylesheet" href="volet5.css">
+    <link href="footer.css" rel="stylesheet">
+    <link href="vol3.css" rel="stylesheet">
+    <link href="vol2.css" rel="stylesheet"></link>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/2b36fca900.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>World Cup 2022</title>
+</head>
+ <body>
+  
+        <!-- ********************début de volet 1 ************************************ -->
+        <header class="header-area header-sticky">
+          <nav class="main-nav">
+
+            <!-- ************************ Logo *********************************** -->
+            <img src="./img/Qatar unveils 2022 World Cup emblem.gif" alt=" logo of cup " class="logo">
+            <!-- ************************* Logo **************************************-->
+
+            <!-- ********************************début de Menu **************************** -->
+              <ul class="nav">
+                  <!-- home bare de menu  -->
+                  <li class="has-sub">
+                     <a href="#top">Home</a>
+                  </li>
+                  <!--  groups bare de menu  -->
+                  <li class="has-sub" onclick="vol2Open()">
+                      <a href="#v2" >Groups<span>&#9660; </span> </a>
+                      <ul class="sub-menu">
+                          <li><a >Group A </a></li>
+                          <li><a >Group B</a></li>
+                          <li><a >Group C</a></li>
+                          <li><a >Group D</a></li>
+                          <li><a >Group E</a></li>
+                          <li><a  onclick="showf()">Group F</a></li>
+                          <li><a >Group G</a></li>
+                          <li><a >Group H</a></li>
+                      </ul>
+                  </li>
+                  <!-- classement bare de menu  -->
+                  <li class="has-sub">
+                      <a onclick="classement()">Classement <span>&#9660;</span></a>
+                      <ul class="sub-menu">
+                        <li><a href="#">Classement of group A</a>
+                          <ul class="sub-sub-menu">
+                            <li><a>Pays-Bas</a></li>
+                            <li><a>Qatar</a></li>
+                            <li><a>Equateur</a></li>
+                            <li><a>senegal</a></li>
+                          </ul>
+                        </li>
+                        <li><a>Classement of group B</a>
+                          <ul class="sub-sub-menu">
+                              <li><a>Etats-Unis</a></li>
+                              <li><a>Angleterre</a></li>
+                              <li><a>ran</a></li>
+                              <li><a>Pays de Galles</a></li>
+                          </ul>
+                        </li>
+                        <li><a>Classement of group C</a>
+                            <ul class="sub-sub-menu">
+                              <li><a>Argentine</a></li>
+                              <li><a>Mexique</a></li>
+                              <li><a>Pologne</a></li>
+                              <li><a>Arabic saoudite</a></li>
+                            </ul>
+                        </li>
+                        <li><a>Classement of group D</a>
+                            <ul class="sub-sub-menu">
+                              <li><a>France</a></li>
+                              <li><a>Danmark</a></li>
+                              <li><a>Tunisie</a></li>
+                              <li><a>Australie</a></li>
+                            </ul>
+                        </li>
+                        <li><a>Classement of group E</a>
+                          <ul class="sub-sub-menu">
+                              <li><a>Japon</a></li>
+                              <li><a>Espagnol</a></li>
+                              <li><a>Costa rica</a></li>
+                              <li><a>Allmagne</a></li>
+                          </ul>
+                        </li>
+                        <li><a>Classement of group F</a>
+                          <ul class="sub-sub-menu">
+                            <li><a>Canada</a></li>
+                            <li><a>Maroc</a></li>
+                            <li><a>Belgique</a></li>
+                            <li><a>Croatie</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                  </li>
+                  <!--  matchs bare de menu  -->
+                  <li class="has-sub" >
+                    <a onclick="match()">Matchs <span> &#9660;</span></a>
+                    <ul class="sub-menu">
+                      <li><a> Matchs of Group A </a>
+              
+                      </li>
+                      <li><a>Matchs of Group B</a> 
+                  
+                      </li>
+                      <li><a>Matchs of Group c</a> 
+                    
+                      </li>
+                      <li><a> Matchs of Group D</a> 
+                      
+                      </li>
+                      <li><a>Matchs of Group E</a> 
+                    
+                      </li>
+                      <li><a>Matchs of Group F</a> 
+                      
+                      </li>          
+                    </ul>
+                  </li> 
+                  <!--  5 emme bare de menu  -->
+                  <div onclick="vol5Open()">
+                    <a href="#v5">
+                      <i class="fa-sharp fa-solid fa-globe" ></i>
+                   </a> <!-- news icon to open volet 5--> 
+                </div>
+              </ul>        
+            <!-- ***** **************************** fin de Menu************************************ -->
+          </nav>
+      </header>
+    <!-- ****************************************** la section au dessous de header / navagation  *************************************************** -->
+    <section class="section-hero" >
+        <div class="hero">
+          <!--titre -->
+          <div class="title">
+                <h1>World Cup Qatar 2022</h1>
+          </div> 
+          <!-- *************************************** les pages défilantes ******************************************** -->
+          <section class="sliders">
+          <div class="container">
+                <input type="radio" name="slider" class="d-none" id="s1" checked>
+                <input type="radio" name="slider" class="d-none" id="s2">
+                <input type="radio" name="slider" class="d-none" id="s3">
+                <input type="radio" name="slider" class="d-none" id="s4">
+                <input type="radio" name="slider" class="d-none" id="s5">
+                <div class="cards">
+            
+                  <!--actualité 1-->
+                  <label for="s1" id="slide1">
+                    <div class="card">
+                      <div class="image">
+                        <img src="./img/benzema.jpg" alt="">
+                      </div>
+                      <a href="https://www.dailysabah.com/sports/football/benzema-wins-ballon-dor-award-for-best-player-in-world" class="btn-contact">details</a>
+                    </div>
+                  </label>
+            
+                    <!--actualité 2-->
+                  <label for="s2" id="slide2">
+                    <div class="card">
+                      <div class="image">
+                        <img src="./img/freeman.jpg" alt="">
+                      </div>
+                      <a href="https://www.dailysabah.com/sports/football/freeman-qatars-al-muftah-call-for-unity-at-world-cup-opening" class="btn-contact">details</a>
+                    </div>
+                  </label>
+            
+                <!--actualité 3-->
+                  <label for="s3" id="slide3">
+                    <div class="card">
+                      <div class="image">
+                        <img src="./img/england.jpg" alt="">
+                      </div>
+                      <a href="https://www.skysports.com/football/news/11095/12752361/jude-bellingham-and-bukayo-saka-show-the-way-forward-as-gareth-southgate-unleashes-england-against-iran" class="btn-contact">details</a>
+                    </div>
+                  </label>
+            
+            <!--actualité 4-->
+                  <label for="s4" id="slide4">
+                    <div class="card">
+                      <div class="image">
+                        <img src="./img/final.png" alt="">
+                      </div>
+                      <a href="https://www.skysports.com/football/news/11095/12579251/englands-route-to-2022-world-cup-final-in-qatar" class="btn-contact">details</a>
+                    </div>
+                  </label>
+            
+            <!--actualité 5-->
+                  <label for="s5" id="slide5">
+                    <div class="card">
+                      <div class="image">
+                        <img src="./img/cr7messi.webp" alt="">
+                      </div>
+                      <a href="https://www.footyheadlines.com/2022/11/first-time-ever-messi-and-ronaldo.html" class="btn-contact">details</a>
+                    </div>
+                  </label>
+              
+                </div>
+          </div>
+          </section>
+        </div>   
+    </section>
+    <!-- ****************************************** fin de volet 1 *************************************************** -->
+ 
+    <!-- ************************************** VOLET 2************************************-->
+
+  <section class="hide v2" id="v2">
+    <h3 class="newstitle GP">Groups: </h3>
+    <div class="iconx" >
+      <i class="fa-regular fa-rectangle-xmark" onclick="vol2Close()"></i><!--icon pour fermer le volet 2--> 
+    </div>
+    <div class="vol2" id="e">
+      <h3 class="grpname">Groupe E</h3>
+      <div class="equipe"> 
+         <ul class="ul_2">
+           <li id="spain"><img src="./img/flag-spain.webp" alt="flag "><h3 class="team"> Espagne</h3></li>
+           <li id="japan"><img src="./img/flag-japan.jpg" alt="flag "><h3 class="team">Japon</h3></li>
+            <li id="germany"><img src="./img/flag-germany.jpg" alt="flag "><h3 class="team">Allemagne</h3></li>
+             <li id="CR"> <img src="./img/flag-costa.jpg" alt="flag "><h3 class="team">Costa Rica</h3></li>
+         </ul>
+       </div>
+ </div>
+    <div class="vol2" id="f">
+         <h3 class="grpname">Groupe F</h3>
+         <div class="equipe"> 
+            <ul class="ul_2">
+              <li id="maroc" onclick="tableopen()"><img src="./img/moroco_glag.jpg" alt="flag "> <h3 class="team"> Maroc</h3></li>
+              <li id="belgique"><img src="./img/flag-belgium.webp" alt="flag "><h3 class="team">Belgique</h3></li>
+              <li id="Canada"><img src="./img/flag-canada.webp" alt="flag "><h3 class="team">Canada</h3></li>
+              <li id="Croatie"><img src="./img/flag-croatia.webp" alt="flag "><h3 class="team">Croatie</h3></li>
+            </ul>
+          </div>
+    </div>
+    
+     <div class="vol2" id="g">
+         <h3 class="grpname">Groupe G</h3>
+         <div class="equipe"> 
+            <ul class="ul_2">
+              <li id="maroc"><img src="./img/flag-bresil.jpg" alt="flag "><h3 class="team"> bresil</h3></li>
+              <li id="belgique"><img src="./img/flag-serbia.jpg" alt="flag "><h3 class="team">serbie</h3></li>
+              <li id="Canada"><img src="./img/flag-suissra.jpg" alt="flag "><h3 class="team">suisse</h3></li>
+              <li id="Croatie"><img src="./img/flag-cameron.jpg" alt="flag "><h3 class="team">Cameroun</h3></li>
+            </ul>
+          </div>
+     </div> 
+     <div class="vol2" id="h">
+         <h3 class="grpname">Groupe H</h3>
+         <div class="equipe"> 
+            <ul class="ul_2">
+              <li id="maroc"><img src="./img/flag-portogale.jpg" alt="flag "><h3 class="team">Portugal</h3></li>
+              <li id="belgique"><img src="./img/flag-ghana.jpg" alt="flag "><h3 class="team">Ghana</h3></li>
+              <li id="Canada"><img src="./img/flag-uruguay.jpg" alt="flag "><h3 class="team">Uruguay</h3></li>
+              <li id="Croatie"><img src="./img/flag-koria.jpg" alt="flag "><h3 class="team">Coree du sude</h3></li>
+            </ul>
+          </div>
+     </div> 
+  </section>
+
+   <!--****************************************** début de Volet 5 *******************************************************-->
+ <div class="hide" id="v5">
+  <section class="news" >
+    <h1 class="newstitle" >Breaking news:</h1>
+    <div >
+      <i class="fa-regular fa-rectangle-xmark" onclick="vol5Close()"></i><!--icon pour fermer le volet 5--> 
+    </div>
+      <!--actualité 1-->
+      <div class="A">
+        <img  class="newsimg"src="./img/freeman.jpg">
+        <div class="txt">
+          <h3 onclick="shownews()">Freeman, Qatar's Al Muftah call for unity at World Cup opening</a> </h3>
+        </div> 
+      </div>
+      <!--actualité 2-->
+      <div class="A">
+        <img  class="newsimg"src="./img/benzema.jpg">
+        <div  class="txt">
+          <a href="https://www.dailysabah.com/sports/football/benzema-wins-ballon-dor-award-for-best-player-in-world"><h3>Benzema wins Ballon d'Or award for best player in world </h3></a>
+        </div>
+      </div>
+      <!--actualité 3-->
+    <div class="A">
+        <img  class="newsimg"src="./img/england.jpg">
+        <div class="txt">
+          <a href="https://www.skysports.com/football/news/11095/12752361/jude-bellingham-and-bukayo-saka-show-the-way-forward-as-gareth-southgate-unleashes-england-against-iran"><h3>Jude Bellingham and Bukayo Saka show the way forward as Gareth Southgate unleashes England against Irann </h3></a>
+        </div>
+    </div>
+        <!--actualité 4-->
+    <div class="A">
+        <img  class="newsimg"src="./img/cr7messi.webp">
+        <div class="txt">
+          <a href="https://www.footyheadlines.com/2022/11/first-time-ever-messi-and-ronaldo.html"><h3>First Time Ever: Messi and Ronaldo Appear Together in Louis Vuitton Campaign</h3></a>
+        </div>
+    </div>
+  <!--actualité 5-->
+    <div class="A">
+      <img  class="newsimg"src="./img/final.png">
+      <div class="txt">
+          <a href="https://www.skysports.com/football/news/11095/12579251/englands-route-to-2022-world-cup-final-in-qatar"><h3>England's route to 2022 World Cup final in Qatar</h3></a>
+    </div>
+
+    </div>
+  </section> 
+</div> 
+   <!--******************************************fin de Volet 5*****************************************************-->
+
+<!--*********************************************** VOLET 3**************************************************-->
+            <section class="art hide" id="v3s">
+              
+            <h1 class="h15">Morocco squad</h1>  
+            <!--*******************************l'image cliquable debut *******************************************--> 
+            <div class="dd">
+            <img src="./img/mcr.jpg" usemap="#maroc" class="ii">
+            <map name="maroc">
+            <area target="fichetech" onclick="fichtech()" href="fiche.html" coords="252,87,341,163" shape="rect">
+            </map>
+            <!--***************************************  l'image cliquable fin *************************--> 
+            </div>
+            <div class="para">
+            <h1 class="line"> Coupe du Monde Homme  </h1>
+            <p> &nbsp;depuis 1970 (6 participation(s))</p> 
+            <p>  &nbsp;  Meilleur résultat : Huitièmes de finale en 1986</p>
+            <h1 class="line">  Championnat d'Afrique des Nations  </h1>
+                <p>&nbsp;depuis 2009</p>
+            <p>Meilleur résultat : 1er</p>
+            <p><strong>-</strong>2 fois premier en 2021, 2018</p>
+            pour plus d'information cliquez <a href="https://www.les-sports.info" style="color:rgb(90, 45, 226)"> ici</a>
+            </div>
+            </section>
+            <!--********************************* la fiche technique:  ***************************************-->
+
+            <iframe id="FT" class="table hide" name="fichetech"></iframe>
+
+
+    <!--*********************************  DEBUT VOLET 4*************************************-->
+    <!--************************************ volet 4 par defaut **********************-->
+    <section class="VOLET4" id="about" >
+      <div id="v4default">
+      <h1 class="headingc"> <span class="">about the FIFA World Cup </span></h1>
+      <div class="row">
+          <div class="video-container">
+              <video src="./img/video.mp4" loop autoplay muted alt="fg "></video>
+          </div>
+          <div class="content">
+              <p>The FIFA World Cup, often simply called the World Cup, is an international association football 
+                competition contested by the senior men's national teams of the members of (FIFA, the International 
+                Federation of Association Football), the sport's global governing body. The championship has been 
+                awarded every four years since the inaugural tournament in 1930. The reigning champions are France,
+                who won their second title at the 2018 tournament in Russia.</p>
+              <a class="btn-VOLET4">learn more</a>
+          </div>
+        </div>
+      </div>
+
+ <!-- ******************************* volet4 apres le click sur l'équipe dans le volet 2******************************-->
+      <div id="tab" class="hide">
+        <iframe class="Tableau" src="tryvolet4test.html" frameborder="0" ></iframe>
+      </div>
+      <!--********************** volet 4 apres le click sur les clasmments ************************  -->
+      <div class=" hide" onclick="classement()" id="classement">
+        <h1 class="headingc"> <span> clasmments </span></h1>
+        <div  class="sec">
+        <div class="clssment e ">
+            <h1>classments group E </h1>
+            <ul class="classmt">
+                <li> <h2>Contry</h2> <h2>classments</h2><h2> notes</h2></li>
+                <li><img src="./img/flag-japan.jpg" alt="maroc"> <h6>Japan</h6> <h6>6</h6></li>
+                <li><img src="./img/flag-spain.webp" alt="croati"><h6> spain</h6> <h6>4</h6></li>
+                <li><img src="./img/flag-germany.jpg" alt="belgum"><h6>germany</h6> <h6>4</h6></li>
+                <li><img src="./img/flag-costa.jpg" alt="ccanada"><h6>costa rica</h6> <h6>3</h6></li>  
+            </ul>
+        </div>   
+        <div class="clssment f ">
+            <h1>classments group f </h1>
+            <ul class="classmt">
+                <li> <h2>Contry</h2> <h2>classments</h2><h2> notes</h2></li>
+                <li><img src="./img/moroco_glag.jpg" alt="maroc"> <h6>morocco</h6><h6>7</h6></li>
+                <li><img src="./img/flag-croatia.webp" alt="croati"><h6>croati</h6> <h6>5</h6></li>
+                <li><img src="./img/flag-belgium.webp" alt="belgum"><h6>belgium</h6> <h6>4</h6></li>
+                <li><img src="./img/flag-canada.webp" alt="ccanada"><h6>canada </h6> <h6>0</h6></li>
+                
+            </ul>
+        </div>
+        <div class="clssment G">
+            <h1>classments group G </h1>
+            <ul class="classmt">
+                <li> <h2>Contry</h2> <h2>classments</h2><h2> notes</h2></li>
+                <li><img src="./img/flag-bresil.jpg" alt="brazil"> <h6>brazil</h6> <h6>6</h6> </li>
+                <li><img src="./img/flag-suissra.jpg" alt="suisse"><h6>Suisse</h6> <h6>6</h6> </li>
+                <li><img src="./img/flag-cameron.jpg" alt="cameron"><h6>Cameroun</h6> <h6>4</h6> </li>
+                <li><img src="./img/flag-serbia.jpg" alt="serbie"><h6>Serbie</h6> <h6>1</h6>   </li>
+                
+            </ul>
+        </div>
+        <div class="clssment f ">
+            <h1>classments group H </h1>
+            <ul class="classmt">
+                <li> <h2>Contry</h2> <h2>classments</h2><h2> notes</h2></li>
+                <li><img src="./img/flag-portogale.jpg" alt="portogale"> <h6>portogale</h6> <h6>6</h6></li>
+                <li><img src="./img/flag-koria.jpg" alt="koiea"><h6>suth koria</h6> <h6>4</h6></li>
+                <li><img src="./img/flag-uruguay.jpg" alt="uruguay"><h6>uruguay</h6> <h6>4</h6></li>
+                <li><img src="./img/flag-ghana.jpg" alt="GHNA"><h6>Ghana </h6> <h6>3</h6></li>
+                
+            </ul>
+        </div>
+      </div>
+    </div>
+<!--****************************************** les matches***********************************************-->
+      <div class="VOLET4 hide" id="match">
+        <h3 class="headingc">les matches prochains:</h3>
+        <div class="match-grid">
+            <div class="match 1">
+                <ul>
+                    <li><img src="./img/flag-croatia.webp" >croatie</li>
+                    <p> VS</p>
+                    <li> belgium<img src="./img/flag-belgium.webp"></li>
+                </ul>
+                <p>1 december </p>
+            </div>
+            <div class="match 2">
+                
+                <ul>
+                    <li><img src="./img/flag-canada.webp">canada</li>
+                    <p> VS</p>
+                    <li>moroco<img src="./img/moroco_glag.jpg" ></li>
+                </ul>
+                <p>1 december</p>
+            </div>
+            <div class="match 3">
+                <ul>
+                    <li><img src="./img/flag-canada.webp" >canada</li>
+                    <p> VS</p>
+                    <li> croatie<img src="./img/flag-croatia.webp" ></li>
+                </ul>
+                <p> 27 november</p>
+            </div>
+            <div class="match 4">
+                <ul>
+                    <li> <img src="./img/moroco_glag.jpg" >moroco</li>
+                    <p> VS</p>
+                    <li>belgium<img src="./img/flag-belgium.webp" > </li>
+                </ul>
+                <p> 27 november</p>
+            </div>
+            <div class="match 5">
+               
+                <ul>
+                    <li><img src="./img/flag-canada.webp" >canada</li>
+                    <p> VS</p>
+                    <li>belgium<img src="./img/flag-belgium.webp" > </li>
+                </ul>
+                <p> 23 november</p>
+            </div>
+            <div class="match 6">
+                <ul>
+                    <li><img src="./img/flag-croatia.webp" >croatie</li>
+                    <p> VS</p>
+                    <li>moroco<img src="./img/moroco_glag.jpg" > </li>
+                </ul>
+                <p> 23 november</p>
+            </div>
+            <div class="match 1">
+              <ul>
+                  <li><img src="./img/flag-croatia.webp" >croatie</li>
+                  <p> VS</p>
+                  <li> belgium<img src="./img/flag-belgium.webp"></li>
+              </ul>
+              <p>1 december </p>
+          </div>
+          <div class="match 2">
+              
+              <ul>
+                  <li><img src="./img/flag-canada.webp">canada</li>
+                  <p> VS</p>
+                  <li>moroco<img src="./img/moroco_glag.jpg" ></li>
+              </ul>
+              <p>1 december</p>
+          </div>
+          <div class="match 3">
+              <ul>
+                  <li><img src="./img/flag-canada.webp" >canada</li>
+                  <p> VS</p>
+                  <li> croatie<img src="./img/flag-croatia.webp" ></li>
+              </ul>
+              <p> 27 november</p>
+          </div>
+          <div class="match 4">
+              <ul>
+                  <li> <img src="./img/moroco_glag.jpg" >moroco</li>
+                  <p> VS</p>
+                  <li>belgium<img src="./img/flag-belgium.webp" > </li>
+              </ul>
+              <p> 27 november</p>
+          </div>
+          <div class="match 5">
+             
+              <ul>
+                  <li><img src="./img/flag-canada.webp" >canada</li>
+                  <p> VS</p>
+                  <li>belgium<img src="./img/flag-belgium.webp" > </li>
+              </ul>
+              <p> 23 november</p>
+          </div>
+          <div class="match 6">
+              <ul>
+                  <li><img src="./img/flag-croatia.webp" >croatie</li>
+                  <p> VS</p>
+                  <li>moroco<img src="./img/moroco_glag.jpg" > </li>
+              </ul>
+              <p> 23 november</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+<!--****************************************volet 4 aprés le click sur l'actualites dans le volet 5 **************************************-->
+    <section class="actua hide" id="newsdetails">
+      <script>
+      function btn(link){location.href = 'https://www.dailysabah.com'}</script>
+      <h1 class="headingc">Freeman, Qatar's Al Muftah call for unity at World Cup opening</h1>
+      <img  class="ig" src="./img/freeman.jpg" > 
+      <p class="p">The opening match of the 2022 FIFA World Cup, which the whole world had been waiting for, took place in Qatar last night </p>
+      <p class="p">On the highly charged night, the dialogue between the famous Hollywood star Morgan Freeman and Qatar's FIFA Ambassador Ghanim Al Muftah capped off the thrilling night.</p>
+      <p class="p">Freeman and Al Muftah had a dialogue over the 13th verse of Surah Hujurat of the Holy Quran.</p>
+      <p class="p">With his commanding voice, Freeman began by posing the question, "How can so many countries, languages ​​and cultures come together if only one path is accepted?" </p>
+      <p class="p">In response to the legendary actor, Al Muftah gave reference to the 13th verse of Surah Hujurat.</p>
+      <p class="p">With excellent articulation, Al Muftah said, "O humanity! We have created you from a male and a female, and we have divided you into races and tribes so that you can meet each other. The most superior of you in the sight of Allah is the one who has the most taqwa. Allah is All-Knowing, Aware."</p>
+      <p class="p">To concur, Freeman went on to say, "I can see it. What unites us here right now is much greater than what separates us."</p>
+      <p class="p"> Al Muftah replied, "We will be raised to believe that we are scattered across this world as nations so that we can learn from each other and find beauty in our differences."</p>
+      <p class="p">This wonderful exchange between the two quickly went viral on social media, with many users describing it as "Amazing and Unifying."</p> 
+      <a href="https://www.dailysabah.com"></a>
+      <button class="btn-VOLET4"  type="button" onclick="btn(this)" value="https://www.dailysabah.com">view more</button>
+  </section>
+    <!--*********************************  FIN VOLET 4*************************************-->
+
+    <!--*************************************************** footer************************************-->
+
+    <!-- contact section starts  -->
+
+<section class="contact">
+
+  <h1 class="headingc"> <span> contact us </span></h1>
+
+  <div class="rowf">
+
+      <form action="#">
+          <input type="text" placeholder="name" class="box">
+          <input type="email" placeholder="email" class="box">
+          <input type="number" placeholder="number" class="box">
+          <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
+          <input type="submit" value="send message" class="btn_footer">
+      </form>
+
+      <div class="image">
+          <img src="./img/index.png" alt="">
+      </div>
+
+  </div>
+
+</section>
+
+<!-- contact section ends -->
+    <section class="footer">
+
+      <div class="box-container">
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#"><ion-icon class="footer-icon" name="call-outline"></ion-icon>+123-456-7890</a>
+          <a href="#"><ion-icon class="footer-icon" name="logo-facebook"></ion-icon>world cup</a>
+          <a href="#"> <ion-icon  class="footer-icon" name="logo-instagram"></ion-icon>  world_cup_qatar </a>
+      </div>
+    
+          <div class="box">
+              <h3>quick links</h3>
+              <a href="#">home</a>
+              <a href="#">groups</a>
+              <a href="#">classements</a>
+              <a href="#">matchs</a>
+              <a href="#">contact</a>
+          </div> 
+          <div class="box">
+              <h3>extra links</h3>
+              <a href="https://www.dailysabah.com/">Dailysabah</a>
+              <a href="https://www.wikipedia.org/">Wikipedia</a>
+              <a href="#">Other</a>
+          </div>
+    
+          <div class="box">
+              <h3>locations</h3>
+              <a href="#">Maroc</a>
+              <a href="#">Qatar</a>
+              <a href="#">India</a>
+              <a href="#">UK</a>
+          </div>
+      </div>
+    
+      <div class="credit"> created by <span>  H.I.Y.I team</span> |version 2022 </div>
+    
+    </section>
+
+ </body>
+</html> 

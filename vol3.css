@@ -1,0 +1,30 @@
+.art{
+    width: 100%;
+    height: 530px;
+    background-color: whitesmoke;
+}
+.h15{
+    text-align: center;
+    font-size: 4rem;
+    color:black;
+}
+.ii{
+position: relative;
+
+}
+.dd{
+    display: inline-block;
+    width:46%;
+    height: 400px;
+    margin-left: 128px;
+}
+.line
+{color:#5C0632 ;}
+.para{
+    width:30%;
+    height: 400px;
+    float: right;
+    font-size: 16px;
+    padding-right: 100px;
+}
+

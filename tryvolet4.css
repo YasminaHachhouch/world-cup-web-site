@@ -1,0 +1,168 @@
+/*Feuilles de style TABLEAU*/
+table{    
+    width:80%; /*précision de la taille du tableau*/
+    margin: auto;/*précision de la position de la table*/
+    border-collapse: collapse;/*la bordure des éléments du tableau sont "collapse"*/
+    }
+table tr:nth-child(odd) {
+    background-color: lightgray;
+}
+/*précision de la taille de chaque element de la table*/
+.th_tab { 
+    width:15%;
+    }
+/*le bouton ajouter*/
+.btn_ajt{
+    border-radius: 5rem;
+    background: rgba(84,13,50);
+    color: #fff;
+    border:0.25px solid transparent;
+    margin-left: 10%;
+    padding: 13px 40px;
+    transition: .4s;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    width :80%;
+}
+/*ajouter les changements de survol*/
+
+.btn_ajt:hover{
+color: black;
+background-color: transparent;
+border: 0.25px solid rgba(84,13,50);
+    }
+.sup{
+        border-radius: 5rem;
+        background: rgba(84,13,50);
+        color: #fff;
+        border: 0.25px  transparent;
+        padding: 13px 10px;
+        transition: .4s;
+        font-family: "montserrat";
+        cursor: pointer;
+        width:60%;
+    }
+.sup:hover{
+        color: black;
+        background-color: transparent;
+        border: 0.25px solid rgba(84,13,50);
+    }
+    .mod{
+        border-radius: 5rem;
+        background: rgba(84,13,50);
+        color: #fff;
+        border: 0.25px  transparent;
+        padding: 13px 10px;
+        transition: .4s;
+        font-family: "montserrat";
+        cursor: pointer;
+        width:60%;
+    }
+    .mod:hover{
+        color: black;
+        background-color: transparent;
+        border: 0.25px solid rgba(84,13,50);
+    }
+    .ajouter{
+        
+        position: relative;
+        align-self: center;
+    }
+/*la classe hide de div  du formulaire est initialement masquée*/
+.hide{
+    display: none;
+}
+ /* Encadré pour voir les limites du formulaire */
+ 
+#formulaire {    
+    width: 700px;
+    padding-left: 8rem; 
+    padding-bottom: 30px;
+    position: absolute;
+    top:300px;
+    left: 500px;
+    box-shadow: black;
+    border: 1px solid black;
+    border-radius: 1em;
+  }
+
+  .txtarea {
+    /* Pour s'assurer que tous les champs texte ont la même police.
+       Par défaut */
+       
+    height: 50px;
+    border-radius: 5rem;
+    /* Pour que tous les champs texte aient la même dimension */
+    width: 300px;
+    border-color:rgba(84,13,50);
+    padding-left: 20px;
+  }
+  .holders{
+    padding-left: 100px;
+  }
+
+  textarea {
+    /* Pour aligner les champs */
+    vertical-align: top;
+    height: 5em;
+  }
+  .btnF{
+    
+    border-radius: 5rem;
+    background: rgba(84,13,50);
+    color: #fff;
+    border: 0.25px  transparent;
+    padding: 13px 10px;
+    width:330px;
+    transition: .4s;
+    font-family: "montserrat";
+    cursor: pointer;
+    
+  }
+  .btnF:hover{
+    color: black;
+    background-color: transparent;
+    border: 0.25px solid rgba(84,13,50);
+}
+.btnC{
+    
+    border-radius: 5rem;
+    background: rgba(84,13,50);
+    color: #fff;
+    border: 0.25px  transparent;
+    padding: 13px 10px;
+    width:330px;
+    transition: .4s;
+    font-family: "montserrat";
+    cursor: pointer;
+    
+  }
+  .btnC:hover{
+    color: black;
+    background-color: transparent;
+    border: 0.25px solid rgba(84,13,50);
+}
+/* les positions des bottons*/
+.buttonsave{
+    padding-left:100px ;
+   
+}
+.buttonCls{
+    padding-left:100px ;
+   
+}
+/* la position de titre*/
+.N_add{
+    padding-left: 90px;
+    color: rgba(84,13,50);
+}
+.headingc{
+    margin: 4rem 0;
+    background-color: #5C0632;
+    color: #f7f7f7;
+    padding: 10px 0;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+  }

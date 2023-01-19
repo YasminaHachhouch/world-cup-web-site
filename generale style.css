@@ -1,0 +1,117 @@
+
+  html {
+    /* font-size: 10px; */
+    /* 10px / 16px = 0.625 = 62.5% */
+    /* Percentage of user's browser font-size setting */
+    font-size: 62.5%;
+  }
+html,
+body {
+  background: #fff;
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  a {
+  text-decoration: none !important;
+  color: #fff !important;
+}
+
+a:hover {
+	color: #5C0632;
+}
+h1{
+    font-size: 3rem;
+    color:#fff;
+}
+/*-------------------volet 4 par defaut ---------------*/
+.VOLET4
+{
+  height:60%;
+  background-color: #fff;
+  text-align: center;
+}
+
+.VOLET4 .row{
+  padding:2rem 0;
+}
+
+.VOLET4 .row .content{
+  flex:1 1 40rem;
+}
+.VOLET4 .row .content p{
+  font-size: 2rem;
+  color:rgb(0, 0, 0);
+  padding:.5rem 5rem;
+  padding-top: 1rem;
+  line-height: 1.5;
+}
+.btn-VOLET4{
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom:3rem;
+  border-radius: 5rem;
+  background:rgba(84, 13, 50, 1);
+  color:#fff;
+  padding:.9rem 3.5rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+.btn-VOLET4:hover{
+  background-color: transparent;
+  border: solid rgba(84, 13, 50, 1);
+  color: black !important;;
+}
+.heading{
+  text-align: center;
+  font-size: 4rem;
+  -webkit-text-stroke:2px black;
+  padding-top:5rem;
+  color:transparent;
+  padding:1rem;
+  margin:2rem 0;
+}
+/**************************************** VOLET 2 ******************************************/
+.table
+{
+  width: 100%;
+  height:1500px;
+}
+.Tableau
+{
+  width: 100%;
+  height:1000px;
+}
+.squad
+{
+  margin-left:150px;
+  width:1300px;
+  height: 650px;
+}
+/* about the video */
+.VOLET4 .row .video-container
+{
+  flex:1 1 40rem;
+  position: relative;
+}
+.VOLET4 .row .video-container video
+{
+  width: 50%;
+  border: 1.5rem solid #fff;
+  border-radius: .5rem;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  height: 50%;
+  object-fit: cover;
+}
+.sizing
+{
+  width:70%;
+  height: 60%;
+  position:absolute;
+  right:0;
+}
